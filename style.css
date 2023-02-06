@@ -36,6 +36,11 @@ a {
 .nav .logo {
 	font-size: 22px;
 	font-weight: 500;
+	transition: color 0.3s ease 0s;
+}
+
+.nav .logo:hover {
+	color: yellow;
 }
 
 .nav .nav-list {
@@ -98,6 +103,15 @@ a {
 	left: 15px;
 	color: #4a98f7;
 	transform: translateY(-50%);
+}
+
+.search-icon {
+	transition: all 0.3s ease 0s;
+}
+
+.search-icon:hover {
+	color: yellow;
+	transform: scale(1.1);
 }
 
 .search-box input {
