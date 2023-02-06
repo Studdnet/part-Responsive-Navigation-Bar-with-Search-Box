@@ -61,6 +61,11 @@ a {
 	transition: all 0.3s ease 0s;
 }
 
+.nav.openSearch .nav-link {
+	opacity: 0;
+	pointer-events: none;
+}
+
 .nav-item .nav-link:before {
 	content: "";
 	width: 0%;
@@ -89,12 +94,18 @@ a {
 
 .nav .search-box {
 	position: absolute;
-	right: 250px;
+	right: 370px;
 	height: 45px;
-	max-width: 755px;
+	max-width: 555px;
 	width: 100%;
 	opacity: 0;
 	pointer-events: none;
+	transition: all 0.3s linear 0s;
+}
+
+.nav.openSearch  .search-box{
+	opacity: 1;
+	pointer-events: auto;
 }
 
 .search-box .search-icon {
@@ -111,7 +122,6 @@ a {
 
 .search-icon:hover {
 	color: yellow;
-	transform: scale(1.1);
 }
 
 .search-box input {
